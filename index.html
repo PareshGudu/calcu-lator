@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="center">
+        <form name="calc">
+            <input type="text" name="" value="Calculator" id="app">
+            <input type="text" name="answer" id="answer">
+            <div class="layer2">
+                <input type="button" name="" class="operator" value="AC" id="clearbutton" onclick="calc.
+                answer.value=''">
+                <input type="button" name="" class="operator" value="=" onclick="calc.
+                answer.value=eval(calc.answer.value)">
+            </div>
+            <div class="layer1">
+                <input type="button" name="" class="num" value="7" onclick="calc.
+                answer.value += '7' ">
+                <input type="button" name="" class="num" value="8" onclick="calc.
+                answer.value += '8' ">
+                <input type="button" name="" class="num" value="9" onclick="calc.
+                answer.value += '9' ">
+                <input type="button" name="" class="operator" value="*" onclick="calc.
+                answer.value += '*'">
+            </div>
+            <div class="layer1">
+                <input type="button" name="" class="num" value="4" onclick="calc.
+                    answer.value += '4' ">
+                <input type="button" name="" class="num" value="5" onclick="calc.
+                    answer.value += '5' ">
+                <input type="button" name="" class="num" value="6" onclick="calc.
+                    answer.value += '6' ">
+                <input type="button" name="" class="operator" value="-" onclick="calc.
+                    answer.value += '-'">
+            </div>
+            <div class="layer1">
+                <input type="button" name="" class="num" value="1" onclick="calc.
+                        answer.value += '1' ">
+                <input type="button" name="" class="num" value="2" onclick="calc.
+                        answer.value += '2' ">
+                <input type="button" name="" class="num" value="3" onclick="calc.
+                        answer.value += '3' ">
+                <input type="button" name="" class="operator" value="+" onclick="calc.
+                        answer.value += '+'">
+            </div>
+            <div class="layer1">
+                <input type="button" name="" class="operator" value="." onclick="calc.
+                answer.value += '.' ">
+                <input type="button" name="" class="num" value="0" onclick="calc.
+                answer.value += '0' ">
+                <input type="button" name="" class="operator" value="%" onclick="calc.
+                answer.value += '%' ">
+                <input type="button" name="" class="operator" value="/" onclick="calc.
+                answer.value += '/'">
+            </div>
+        </form>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
